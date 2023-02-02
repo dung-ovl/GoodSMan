@@ -1,15 +1,16 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from 'firebase/firestore/lite';
+import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCh04d8f4LTDS_Eimlvyts1Yaa74dkZI18",
-    authDomain: "goodsman-da157.firebaseapp.com",
-    projectId: "goodsman-da157",
-    storageBucket: "goodsman-da157.appspot.com",
-    messagingSenderId: "458144098180",
-    appId: "1:458144098180:web:5b6d479c860034ca4a9fd1"
-}
+    apiKey: "AIzaSyDtg6AocZ8SgDlvfp6Y2X4QtC38zHp8Jrk",
+    authDomain: "goodsman-1dd35.firebaseapp.com",
+    projectId: "goodsman-1dd35",
+    storageBucket: "goodsman-1dd35.appspot.com",
+    messagingSenderId: "356149107049",
+    appId: "1:356149107049:web:9d935466825c16ecc185f8"
+};
+
 
 let _firebaseApp = null
 let _firebaseFirestore = null
@@ -22,3 +23,4 @@ let firebaseFirestore = _firebaseFirestore == null ? (_firebaseFirestore = getFi
 let firebaseStorage = _firebaseStorage == null ? (_firebaseStorage = getStorage(firebaseApp)) : _firebaseStorage
 
 export { firebaseFirestore, firebaseStorage, firebaseApp };
+

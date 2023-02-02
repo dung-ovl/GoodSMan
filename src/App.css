@@ -42,7 +42,7 @@ body {
   /* font-family: "Playfair Display", serif; */
   font-family: "Merriweather", serif;
   color: var(--primary-color-dark);
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   min-width: 360px;
 }
 
@@ -79,4 +79,10 @@ a {
 
 .icon {
   font-size: 1.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

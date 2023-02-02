@@ -51,8 +51,8 @@ function ProductCart({ item }) {
         </span>
         <input
           type="text"
-          className="rounded border border-1 ps-3 fw-light fs-6"
-          style={{ width: "4rem" }}
+          className="rounded border border-1 p-2 fw-light fs-6"
+          style={{ width: "2.5rem" }}
           value={item.quanlity}
           onClick={() => handleEditQuanlity()}
           onChange={(e) => setQuantity(e.target.value)}
@@ -90,8 +90,9 @@ function Cart() {
 
   const checkout = () => {
     if (hasLogin()) {
-      console.log("Checkouted");
+      window.location.href = "/checkout";
     } else {
+      window.location.href = "/account?redirect=/checkout";
     }
   };
 

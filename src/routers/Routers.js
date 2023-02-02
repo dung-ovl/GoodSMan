@@ -12,6 +12,11 @@ import Contact from '../pages/Contact'
 import Location from '../pages/Location'
 import LocationDetail from '../pages/LocationDetail'
 
+import AddProduct from '../admin/AddProduct'
+import AllProduct from '../admin/AllProduct'
+import ProtetedRoute from './ProtetedRoute'
+import Dashboard from '../admin/Dashboard'
+
 function Routers() {
   return (
     <Routes>
